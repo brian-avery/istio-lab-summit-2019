@@ -107,7 +107,7 @@ conveniently, you can deploy it on OpenShift Online or other OpenShift flavours:
 oc new-project guides
 oc new-app osevg/workshopper --name=istio-workshop \
       -e CONTENT_URL_PREFIX=https://raw.githubusercontent.com/jamesfalkner/istio-lab-summit-2018/master/instructions
-      -e WORKSHOPS_URLS="https://raw.githubusercontent.com/jamesfalkner/istio-lab-summit-2018/master/instructions/_rhsummit18.yml" \
+      -e WORKSHOPS_URLS="https://raw.githubusercontent.com/jamesfalkner/istio-lab-summit-2018/master/instructions/_rhsummit19.yml" \
       -e JAVA_APP=false \
       -e OPENSHIFT_MASTER="http://127.0.0.1:8443" \
       -e APPS_SUFFIX="apps.127.0.0.1.nip.io" \
@@ -137,7 +137,7 @@ You can directly run Workshopper as a docker container which is specially helpfu
 ```
 docker run -p 8080:8080 -v $(pwd):/app-data \
               -e CONTENT_URL_PREFIX="file:///app-data/instructions" \
-              -e WORKSHOPS_URLS="file:///app-data/instructions/_rhsummit18.yml" \
+              -e WORKSHOPS_URLS="file:///app-data/instructions/_rhsummit19.yml" \
               -e OPENSHIFT_MASTER="foo" \
               -e APPS_SUFFIX="$MY_IP.xip.io" \
               -e ISTIO_LAB_HOSTNAME="MY_HOSTNAME" \
