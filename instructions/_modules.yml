@@ -3,17 +3,17 @@ modules:
     name: Introduction and Setup
   basic-routing:
     name: Basic Routing
-  graph-and-tracing:
+  mtls:
     name: Service Visualization and Tracing Console
-  fault-injection:
-    name: Fault Injection
+  auth:
+    name: Authentication with JWT/RBAC
   rate-limiting:
     name: Rate Limiting
   timeouts:
-    name: Timeouts
-  whitelisting:
-    name: Whitelisting
-  blacklisting:
-    name: Blacklisting
-  extra-credit:
-    name: Extra Credit
+    name: Timeouts/Circuit Breaking
+  whitelisting-blacklisting:
+    name: Whitelisting/Blacklisting
+  fault-injection:
+    name: Fault Injection
+  sidecar:
+    name: Restricting Proxy Scope
